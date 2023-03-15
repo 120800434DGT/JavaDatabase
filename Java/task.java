@@ -45,16 +45,7 @@ public class task {
         return maxIndex;
     }
 
-    public static int countOccurances (int [] numbers, int target) {
-        int count = 0;
-        for (int index = 0; index < numbers.length; index++){
-            if(numbers[index]==target) {
-                count = count + 1;
-            }
-        }
-        return count;
-    }
-
+    
     public static int findMinNumber (int [] numbers) {
         int min = numbers[0];
         for (int index = 1; index < numbers.length; index++){
@@ -64,6 +55,7 @@ public class task {
         }
         return min;
     }
+    
     public static int findMinPos (int [] numbers) {
         int minIndex = 0;
         for (int index = 1; index < numbers.length; index++){
@@ -73,6 +65,17 @@ public class task {
         }
         return minIndex;
     }
+    
+    public static int countOccurances (int [] numbers, int target) {
+        int count = 0;
+        for (int index = 0; index < numbers.length; index++){
+            if(numbers[index]==target) {
+                count = count + 1;
+            }
+        }
+        return count;
+    }
+    
     public static Boolean linearSearch(int [] numbers, int target) {
         Boolean Ocurrance = false;
         for (int index = 0; index < numbers.length; index++){

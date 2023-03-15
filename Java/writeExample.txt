@@ -1,4 +1,0 @@
-The max is 100
-The location of the min is 5
-The number of 7s is 2
-Name found: true
